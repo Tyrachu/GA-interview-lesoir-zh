@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attal · Le Soir 专访译文</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+SC:wght@300;400;600&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap');
+
+  :root {
+    --cream: #f7f3ec;
+    --ink: #1a1714;
+    --rule: #2a3f6f;
+    --accent: #c0392b;
+    --muted: #6b6460;
+    --tag-bg: #eef1f7;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Noto Serif SC', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.85;
+    font-size: 15px;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.4rem 4rem;
+  }
+
+  .masthead {
+    text-align: center;
+    border-bottom: 3px solid var(--rule);
+    padding-bottom: 1rem;
+    margin-bottom: 1.6rem;
+  }
+  .source-tag {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .12em;
+    color: #fff;
+    background: var(--rule);
+    padding: .15rem .7rem;
+    margin-bottom: .7rem;
+  }
+  .pub-info {
+    font-size: .74rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: .5rem;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: .7rem 0 .4rem;
+  }
+  h1 .fr {
+    display: block;
+    font-size: .85rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: .25rem;
+  }
+  .deck {
+    font-size: .86rem;
+    line-height: 1.7;
+    color: var(--muted);
+    border-left: 3px solid var(--accent);
+    padding-left: .85rem;
+    margin: .9rem 0 1.3rem;
+    text-align: left;
+  }
+
+  /* Glossary */
+  details.glossary {
+    background: var(--tag-bg);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: .6rem .9rem;
+    margin-bottom: 1.5rem;
+  }
+  details.glossary summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .8rem;
+    color: var(--rule);
+    list-style: none;
+    user-select: none;
+  }
+  details.glossary summary::before { content: '▸ '; }
+  details.glossary[open] summary::before { content: '▾ '; }
+  .gl-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .15rem .8rem;
+    margin-top: .5rem;
+    font-size: .77rem;
+    line-height: 1.85;
+  }
+  .gl-item { display: flex; gap: .35rem; }
+  .gl-fr { font-style: italic; color: var(--rule); white-space: nowrap; }
+  @media (max-width: 480px) { .gl-grid { grid-template-columns: 1fr; } }
+
+  /* QA */
+  .qa { margin-bottom: 1.4rem; }
+  .question {
+    background: var(--rule);
+    color: #fff;
+    padding: .4rem .8rem;
+    font-size: .82rem;
+    font-weight: 600;
+    line-height: 1.55;
+    border-radius: 2px 2px 0 0;
+  }
+  .question .fr-q {
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    font-size: .74rem;
+    opacity: .7;
+    margin-top: .15rem;
+  }
+  .answer {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: .75rem .95rem .85rem;
+    border-radius: 0 0 2px 2px;
+    font-size: .88rem;
+  }
+  em.key {
+    font-style: italic;
+    color: var(--accent);
+  }
+  strong { font-weight: 600; }
+
+  footer {
+    text-align: center;
+    font-size: .7rem;
+    color: var(--muted);
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: .75rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="source-tag">LE SOIR</div>
+  <div class="pub-info">2026年3月28日 · 记者 Joëlle Meskens（常驻巴黎）· 译自法文</div>
+  <h1>
+    「我们必须打破极端主义的钳形攻势」
+    <span class="fr">« Nous devons briser la tenaille des extrêmes »</span>
+  </h1>
+  <p class="deck">
+    前总理、现任 Renaissance 党主席 Gabriel Attal 将 RN 与 LFI 并列批判，指其煽动公共辩论族裔化。他呼吁在2027年前构建一个能激励法国人参与的希望方案，同时刻意与现任总统在执政风格上划清距离。
+  </p>
+</div>
+
+<details class="glossary">
+  <summary>政治词汇对照表（点击展开）</summary>
+  <div class="gl-grid">
+    <div class="gl-item"><span class="gl-fr">RN</span><span>国民联盟（极右政党）</span></div>
+    <div class="gl-item"><span class="gl-fr">LFI</span><span>法国不屈服（极左政党）</span></div>
+    <div class="gl-item"><span class="gl-fr">Renaissance</span><span>复兴党（马克龙派中间政党）</span></div>
+    <div class="gl-item"><span class="gl-fr">En Marche</span><span>前进党（Renaissance 前身）</span></div>
+    <div class="gl-item"><span class="gl-fr">priorité nationale</span><span>国家优先（极右翼移民口号）</span></div>
+    <div class="gl-item"><span class="gl-fr">la nouvelle France</span><span>新法兰西（LFI 竞选口号）</span></div>
+    <div class="gl-item"><span class="gl-fr">ascenseur social</span><span>社会电梯（阶层向上流动）</span></div>
+    <div class="gl-item"><span class="gl-fr">laïcité</span><span>世俗主义 / 政教分离原则</span></div>
+    <div class="gl-item"><span class="gl-fr">Ve République</span><span>第五共和国</span></div>
+    <div class="gl-item"><span class="gl-fr">moment Spoutnik</span><span>斯普特尼克时刻（被超越的警醒）</span></div>
+    <div class="gl-item"><span class="gl-fr">régalien</span><span>国家核心职能（安全、司法、移民）</span></div>
+    <div class="gl-item"><span class="gl-fr">abaya</span><span>伊斯兰长袍（2023年被禁入校）</span></div>
+  </div>
+</details>
+
+<div class="qa">
+  <div class="question">
+    这届市政选举创下弃权率纪录，结果揭晓时多名现任市长遭到激烈冲击。这反映出怎样的政治氛围？
+    <span class="fr-q">Après des municipales marquées par une abstention record…</span>
+  </div>
+  <div class="answer">
+    由 <strong>LFI</strong> 与 <strong>RN</strong> 这两股极端势力煽动的政治暴力氛围，最终蔓延至部分民众之中。这些极端力量正将公共辩论推向歇斯底里。这些场面极为震撼——落选的民选官员几乎遭到人身威胁。这也折射出共和国学校与各项制度的某种失败：未能有效灌输对警察、宪兵乃至民选代表等公权力承担者的基本尊重。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    继极右翼的「<em>priorité nationale</em>（国家优先）」之后，LFI 提出「<em>la nouvelle France</em>（新法兰西）」。两种分裂国家的方式？
+  </div>
+  <div class="answer">
+    LFI 与 RN 有极多共同点。他们不仅同为反欧洲，更共同助长公共辩论的<em class="key">族裔化</em>。Jean-Luc Mélenchon 的「新法兰西」，是将法国公民归结为肤色或宗教信仰所代表的身份认同。RN 则试图使自身「体面化」——但翻开其2024年立法选举纲领，它明确提出按国籍数量将法国人分为两类。两者都在制造法国人之间的对立：LFI 告诉穆斯林，保护他们就必须攻击犹太人；RN 则告诉犹太人，保护他们就必须攻击穆斯林。这些极端势力正在瓦解共和国一贯能做到的事情——将无论何种信仰、何种出身的公民团结在一起。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    尽管如此，RN 持续扎根，LFI 也在这次选举中异军突起……
+  </div>
+  <div class="answer">
+    首先，我们也在持续巩固阵地——赢得了200个市长职位、20余个超过一万人口的城市，以及两个超过十万人口的城市，其中包括 <strong>Bordeaux</strong>。但确实，我们看到这种<em class="key">两端相互喂养的钳形攻势</em>：每当 LFI 过激，RN 就会上涨，因为部分法国人视之为解药；LFI 则借 RN 上涨渲染「法西斯威胁」来收割选票。我们这些自由派、进步派、中间派政党必须合力打破这一格局。唯一的办法，是向法国人提出一个能够激发<em class="key">希望</em>的方案——让他们看到，我们不只是来反对极端主义的，而是真正为他们提供社会愿景。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    能否避免2027年出现 Bardella 或 Le Pen 对阵 Mélenchon 的第二轮格局？
+  </div>
+  <div class="answer">
+    我完全不认为这一局面是不可避免的，RN 的胜利也不是必然的。但2022年以前适用的规律——温和派候选人只要进入第二轮对阵 RN 便能胜利——如今已不再成立。今天的核心问题不再只是「进入第二轮」，而是真正击败 RN。这再次说明，一个能给法国人带来真实希望的政治方案至关重要。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    这一希望方案的主要轴线是什么？
+  </div>
+  <div class="answer">
+    我想推动的，是一个能重启<em class="key">ascenseur social（社会电梯）</em>的方案。法国人所渴望的，是依靠劳动过上更好的生活，看到子女能有比自己更好的工作——乃至在人工智能严重威胁年轻人就业的今天，仅仅是能有一份工作。这是一个将<strong>教育</strong>置于首位的方案，必须将个人向上流动的愿望与国家整体提升的愿望联结起来。法国人希望重拾往日的强国地位——他们感到法国的地位正在经历某种衰退，这种感受在某些方面并非全无道理。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    衰退主义（déclinisme）正当道……
+  </div>
+  <div class="answer">
+    并非总是有据可依。但在国际层面，美中之间正上演某种<em class="key">moment Spoutnik（斯普特尼克时刻）</em>——在人工智能、机器人技术和新技术领域的激烈竞赛。如果我们彻底落后于这场竞赛，未来数年将迎来普遍性的贫困。所有成功跻身世界强国的国家，都是通过<strong>投资创新</strong>实现的。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    2027年将有众多候选人站在同一路线上。如何区分高下？
+  </div>
+  <div class="answer">
+    到某个时刻必须实现<em class="key">整合</em>。否则，选票分散将导致那场 LFI 对阵 RN 的「恐怖第二轮」。但整合必须是真正围绕方案展开竞选之后的结果。2022年，乌克兰战争爆发后根本没有真正的竞选，总统宣布参选也极为迟滞——结果是大批选民的失望，以及总统此后失去绝对多数。因此，2026年需要一场<strong>方案之间真正的交锋</strong>，整合只能在其之后到来。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    这一整合从哪里跨越到哪里？<em>En Marche</em> 当初自我定位「既右又左」，但你们失去了左翼……
+  </div>
+  <div class="answer">
+    确实，有一批中间偏左的选民离我们而去。主要原因是<em class="key">执政方式</em>的问题——2017年，大家都认为能通过工会、地方民选官员、社会组织网络参与国家转型；但最终执政方式相当垂直，一如拥有绝对多数时的 <strong>Ve République</strong> 惯常模式。我们必须重新审视执政方式。这正是为什么自解散以来，我一直主张总统应接受<strong>分享权力</strong>——这一立场受到批评，但我坚持。至于整合范围，价值观才是关键：我的方案在经济上是自由的、是亲欧洲的、在 <em class="key">régalien（国家核心事务）</em>上非常强硬、在社会与气候问题上是进步的。我相信左翼和右翼都能在其中找到共鸣，并凝聚法国多数民众。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    您是2024年解散前那场混乱之前最后一位总理。如何同时承载断裂与传承？
+  </div>
+  <div class="answer">
+    我不会把法国人当傻瓜。我不会说自己与 Macron 毫无关联——我曾是总理，曾是多数派议员，我为已做的事情负责。但我与总统是不同的人，说这话并不一定是批评。在安全与<em class="key">laïcité（世俗主义）</em>问题上，我有更深的信念：在教育部长任上落实了2004年禁止校内穿戴 <em class="key">abaya（伊斯兰长袍）</em>的法律，在总理任上推出了针对未成年人违法行为的强力措施。在执政方式上，我同样想展示自己的不同——<strong>权力必须得到更好的分享</strong>。
+  </div>
+</div>
+
+<div class="qa">
+  <div class="question">
+    那么，法国并非不可改革——尽管自碎片化与议会三极化以来外界常作此论？
+  </div>
+  <div class="answer">
+    我不这么认为。关键在于为这段旅程<em class="key">指明目的地</em>——说清楚这些改革的终点是怎样的社会方案。当有人提议取消两个法定节假日时，背后目的是什么？法国人看不明白。我们必须<strong>构建一个政治叙事</strong>。
+  </div>
+</div>
+
+<footer>
+  原载于《Le Soir》2026年3月28日 · 采访：Joëlle Meskens · 人名及党名保留原文
+</footer>
+
+</body>
+</html>
